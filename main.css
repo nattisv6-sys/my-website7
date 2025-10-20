@@ -65,7 +65,7 @@
     float: left;
 }
 #nm {
-    font-size: 39px;
+    font-size: 5%;
     color: rgb(71, 60, 231);
 }
 #adr {
@@ -142,4 +142,5 @@ body {
    background: rgb(228, 243, 255);
    color: rgb(56, 172, 230);
    text-decoration: none;
+
 }
