@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('menu-toggle');
+  const nav = document.getElementById('main-nav');
+  btn.addEventListener('click', () => nav.classList.toggle('active'));
+});
 //document.write("ok");
     //console.log("HI");
     //console.error("HI");
@@ -86,3 +91,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     
+
