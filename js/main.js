@@ -1,4 +1,16 @@
-    //document.write("ok");
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('main-nav');
+
+  toggle.addEventListener('click', function() {
+    if (nav.style.display === 'flex') {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = 'flex';
+    }
+  });
+});
+//document.write("ok");
     //console.log("HI");
     //console.error("HI");
     //console.warn("HI");
@@ -71,5 +83,6 @@
     ];
     var n=a.length;
     
+
 
     
