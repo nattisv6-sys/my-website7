@@ -1,0 +1,61 @@
+diff --git a/index.html b/index.html
+index 1234567..89abcde 100644
+--- a/index.html
++++ b/index.html
+@@
+-<link rel="stylesheet" href="js/main.js">
++<script src="js/main.js" defer></script>
+@@
+-<header>
+-  <div id="m">
+-    <a href="/my-website7/index.html">
+-      <img id="im" src="..." alt="Жмцнттум" width="150" height="150">
+-    </a>
+-    <div id="nm"><b>Житомирський міський центр...</b></div>
+-    <a href="page.html" class="link">Гуртки</a>
+-    <a href="contacts.html" class="link">Контакти</a>
+-    <a href="about.html" class="link">Про нас</a>
+-    <a href="index.html" class="link">Головна</a>
+-  </div>
+-</header>
++<header>
++  <div id="m" class="header-inner container">
++    <a href="/my-website7/index.html">
++      <img id="im" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjU3en_cEAupazh4xvCrw5qrqjb5fqFZFBqA&s" alt="Жмцнттум">
++    </a>
++    <div id="nm"><b>Житомирський міський центр науково-технічної<br>творчості учнівської молоді</b></div>
++    <button id="menu-toggle" aria-label="toggle menu">☰ Меню</button>
++    <nav id="main-nav">
++      <a href="index.html" class="nav-link">Головна</a>
++      <a href="about.html" class="nav-link">Про нас</a>
++      <a href="contacts.html" class="nav-link">Контакти</a>
++      <a href="page.html" class="nav-link">Гуртки</a>
++    </nav>
++  </div>
++</header>
+
+diff --git a/main.css b/main.css
+index 1111111..2222222 100644
+--- a/main.css
++++ b/main.css
+@@
++#im { width:150px; height:150px; display:block; margin:10px auto; }
++.header-inner { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; padding:10px; }
++#menu-toggle { display:none; background:none; border:none; font-size:24px; cursor:pointer; }
++#main-nav { display:flex; gap:10px; align-items:center; }
++.nav-link { padding:8px 12px; border-radius:8px; background:rgba(255,255,255,0.6); text-decoration:none; color:rgb(24,56,199); }
++.main-section { text-align:center; padding:20px; background:rgba(255,255,255,0.85); }
++#im2 { width:100%; max-width:900px; height:auto; margin:10px auto; display:block; }
++@media (max-width:768px){#menu-toggle{display:block;}#main-nav{display:none;flex-direction:column;width:100%;}#main-nav.active{display:flex;}#nm{font-size:20px;text-align:center;}}
++@media (max-width:420px){#nm{font-size:18px;}.nav-link{width:80%;margin:auto;}}
+
+diff --git a/js/main.js b/js/main.js
+index 3333333..4444444 100644
+--- a/js/main.js
++++ b/js/main.js
+@@
++document.addEventListener('DOMContentLoaded',()=>{
++  const btn=document.getElementById('menu-toggle');
++  const nav=document.getElementById('main-nav');
++  btn.addEventListener('click',()=>nav.classList.toggle('active'));
++});
