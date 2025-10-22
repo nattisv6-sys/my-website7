@@ -145,30 +145,8 @@ body {
 
 }
 
-@media (max-width: 768px) {
-    body {
-       font-size: 16px;
-       text-align: center;
-    }
-    #im2 {
-        position: static;
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-    }
 
-    im1 {
-        float: none;
-        width: 100%;
-        height: auto;
-    }
 
-    #mn {
-        font-size:150%;
-        color: rgb(71,66,231);
-        text-align:center;
-    }
-}
 
 
 
