@@ -351,6 +351,11 @@ body {
   .txt { font-size: 14px; }
 }
 
+@media (max-width:768px){
+  #menu-toggle{display:block;}
+  #main-nav{display:none;flex-direction:column;width:100%;}
+  #main-nav.active{display:flex;}
+}
 
 
 
