@@ -12,42 +12,47 @@
 
 <div class = "container mt-5">    
  <header>
-      <div id="m" >
-         <a href="/my-website7/index.html">
-          <img id="im" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjU3en_cEAupazh4xvCrw5qrqjb5fqFZFBqA&s" alt="Жмцнттум" width="150" height="150">
-         </a>
-         <div id="nm"><b>Житомирський міський центр науково-технічної<br> творчості учнівської молоді</b></div>
-            <a href="/my-website7/page.html" class="link">Гуртки</a>
+  <div id="m" class="header-inner container">
+    <a href="/my-website7/index.html">
+      <img id="im" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjU3en_cEAupazh4xvCrw5qrqjb5fqFZFBqA&s" alt="Жмцнттум">
+    </a>
 
-            <a href="/my-website7/contacts.html" class="link">Контакти</a>
-       
-            <a href="/my-website7/about.html" class="link">Про нас</a>
-            
-            <a href="/my-website7/index.html" class="link">Головна</a>
-      </div>
-            
- 
- </header>
-<noscript>Ввімкніть Java Scrpt</noscript>
-<div id='main'>
-    <h1 id='bl'>Отримайте освіту від</h1>
-    <h2 id='rd'>Експертів у своїй галузі</h1>
-    <p id='txt'>
-     Кожен викладач має професійну освіту, стаж роботи<br>
-     з дітьми та працює за навчальними програмами,<br>
-     затвердженими наказом департаменту освіти<br>
-     Житомирської міської ради.</p>
-    <h1 id='bl'>Обирайте навчальний
-    корпус <p id='rd'>на свій смак</p>
-    </h1>
-    <p id='txt'>Ви завжди знайдете найближчий та зручніший шлях<br>
-     до розвитку знань і умінь вашої дитини чи підлітка. У<br>
-     нашому центрі творчості ви зможете навіть міксувати<br>
-     різні корпуси з різними творчими гуртками.</p>
-    
-   <img id='im2' src="https://mcnttumzt.do.zt.ua/wp-content/uploads/2023/06/img_0900.jpg" alt="" width='45%'>
-    
-</div>
+    <div id="nm"><b>Житомирський міський центр науково-технічної<br>творчості учнівської молоді</b></div>
+
+    <!-- Навігація -->
+    <button id="menu-toggle" aria-label="toggle menu">☰ Меню</button>
+    <nav id="main-nav">
+      <a href="/my-website7/index.html" class="nav-link">Головна</a>
+      <a href="/my-website7/about.html" class="nav-link">Про нас</a>
+      <a href="/my-website7/contacts.html" class="nav-link">Контакти</a>
+      <a href="/my-website7/page.html" class="nav-link">Гуртки</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Основні секції — тепер з класом (не id duplicate) -->
+<section class="main-section container">
+  <h1 class="title">Отримайте освіту від</h1>
+  <h2 class="subtitle">Експертів у своїй галузі</h2>
+
+  <p class="txt">
+    Кожен викладач має професійну освіту, стаж роботи<br>
+    з дітьми та працює за навчальними програмами,<br>
+    затвердженими наказом департаменту освіти<br>
+    Житомирської міської ради.
+  </p>
+
+  <h2 class="title2">Обирайте навчальний корпус</h2>
+  <p class="subtitle2">на свій смак</p>
+
+  <p class="txt">Ви завжди знайдете найближчий та зручніший шлях<br>
+    до розвитку знань і умінь вашої дитини чи підлітка. У<br>
+    нашому центрі творчості ви зможете навіть міксувати<br>
+    різні корпуси з різними творчими гуртками.
+  </p>
+
+  <img id="im2" src="https://mcnttumzt.do.zt.ua/wp-content/uploads/2023/06/img_0900.jpg" alt="колектив">
+</section>
 <div id='main'>
      <h2 id='bl'>Принципи, за якими працює центр науково - технічної творчості</h2>
      <p id='txt'>
@@ -82,6 +87,7 @@
    <script src="js/main.js"></script>
 </body>
 </html>
+
 
 
 
